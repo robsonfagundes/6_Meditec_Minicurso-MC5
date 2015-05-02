@@ -1,6 +1,10 @@
 # 6º Meditec - Minicurso-MC5
 
-O Evento
+MEDITEC 6
+
+O evento que reúne em um só lugar CONHECIMENTO, INOVAÇÃO e NEGÓCIO. Faça já sua inscrição e venha participar do maior evento de tecnologia do oeste do Paraná. Realização: Nucleo TI ACIME Medianeira e UTFPR. 
+
+#O Evento
 
 O Meditec tem como objetivo, propiciar capacitação continuada e permitir aos alunos de informática o acesso a novas tecnologias na área de Tecnologia da Informação e Comunicação, buscando sempre promover a discussão de ideias, perspectivas, problemas e tendências do setor de TIC, aproximando empresários, acadêmicos, pesquisadores e entusiastas no setor tanto de Medianeira quanto da região.
 
