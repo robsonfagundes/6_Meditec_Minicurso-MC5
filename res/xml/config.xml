@@ -5,11 +5,11 @@
     <name>6Meditec</name>
 
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+       Minicurso - MC5 - Cross-Platform Mobile App Development
     </description>
 
-    <author href="http://cordova.io" email="dev@cordova.apache.org">
-        Apache Cordova Team
+    <author href="http://www.rsyssoftwares.com.br/robsonfagundes/" email="robsonfagundes@gmail.com">
+        Robson Adão Fagundes
     </author>
 
     <access origin="*"/>
