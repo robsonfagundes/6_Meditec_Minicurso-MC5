@@ -4,6 +4,7 @@ import org.apache.cordova.DroidGap;
 import android.os.Bundle;
 
 public class AppMeditecActivity extends DroidGap {
+	
     /** Called when the activity is first created. */
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
