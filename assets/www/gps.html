@@ -1,55 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>GPS Example</title>
 
-<title>6 Meditec - Minicurso-MC5 </title>
+<script type="text/javascript" charset="utf-8" src="js/libs/phonegap/cordova-2.9.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+<script type="text/javascript" charset="utf-8">
 
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
 
-<link rel="stylesheet"
-	href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        navigator.geolocation.getCurrentPosition(onSuccess, onError);
+    }
 
-<!-- Extra Codiqa features -->
-<link rel="stylesheet" href="codiqa.ext.css">
-<link rel="stylesheet" href="https://codiqa.com/view/5fe8ef50/css">
+    // onSuccess Geolocation
+    //
+    function onSuccess(position) {
+        var element = document.getElementById('geolocation');
+        element.innerHTML = 'Latitude: '          + position.coords.latitude         + '<br />' +
+                            'Longitude: '         + position.coords.longitude        + '<br />' +
+                            'Altitude: '          + position.coords.altitude         + '<br />' +
+                            'Accuracy: '          + position.coords.accuracy         + '<br />' +
+                            'Altitude Accuracy: ' + position.coords.altitudeAccuracy + '<br />' +
+                            'Heading: '           + position.coords.heading          + '<br />' +
+                            'Speed: '             + position.coords.speed            + '<br />' +
+                            'Timestamp: '         + position.timestamp               + '<br />';
+    }
 
-<!-- jQuery and jQuery Mobile -->
-<script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
-<script
-	src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+        // onError Callback receives a PositionError object
+        //
+        function onError(error) {
+            alert('code: '    + error.code    + '\n' +
+                  'message: ' + error.message + '\n');
+        }
 
-<!-- Extra Codiqa features -->
-<script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
-
-<script src="https://codiqa.com/view/5fe8ef50/js"></script>
-
+    </script>
 </head>
 <body>
-
-	<!-- PAGE HOME ################################################################# -->
-	<div data-role="page" data-control-title="home" id="page1">
-
-		<!-- header ################## -->
-		<div data-theme="e" data-role="header">
-			<h2>GPS - Minicurso-MC5</h2>
-		</div>
-
-		<!-- content ################# -->
-		<div data-role="content">
-			<p id="geolocation">Finding geolocation...</p>
-		</div>
-
-		<!-- footer ################ -->
-		<div data-theme="e" data-role="footer" data-position="fixed">
-			<p style="font-size: 10px" align="center">Minicurso-MC5 - Robson Adão
-				Fagundes- rsyssoftwares.com.br</p>
-		</div>
-	</div>
-
-
+	<p id="geolocation">Finding geolocation...</p>
 </body>
 </html>
-

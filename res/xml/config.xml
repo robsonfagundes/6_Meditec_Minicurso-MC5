@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
-        id        = "io.cordova.helloCordova"
+        id        = "br.net.meditec.app"
         version   = "2.0.0">
-    <name>Hello Cordova</name>
+    <name>6Meditec</name>
 
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
